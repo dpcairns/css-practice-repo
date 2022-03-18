@@ -10,9 +10,29 @@ p {
     font-size: 2rem;
 }
 
+/* .boxes {
+    border: solid 1px black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    flex-wrap: wrap;
+} */
+
+.boxes {
+    border: solid 1px black;
+    width: 100%;
+    display: grid;
+}
+
+@media (max-width: 500px) {
+    body {
+        background-color: magenta;
+    }
+}
+
 .box {
     width: 100px;
-    height: 100px;
     border: solid 1px black;
     margin: 10px;
     padding: 10px;
@@ -46,4 +66,30 @@ p {
 
 .yellow {
     background-color: yellow;
+}
+
+* {
+    border: solid 1px black;
+}
+
+.grid {
+    background-color: pink;
+    height:100%;
+    display: grid;
+    grid-template-rows: 30% 70%;
+}
+
+.top-row {
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.bottom-row {
+    display: grid;
+    grid-template-columns: 45% 20% 35%;
+}
+
+.bottom-right {
+    display: grid;
+    grid-template-rows: 50% 50%;
 }
